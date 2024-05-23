@@ -13,11 +13,11 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './pages/about/about.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { SpecialtiesComponent } from './pages/specialties/specialties.component';
-import { ReviewsComponent } from './pages/reviews/reviews.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SpecialtyDetailDialogComponent } from './pages/specialties/dialogs/specialty-detail-dialog/specialty-detail-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { YoutubeVideoCardComponent } from './pages/youtube-video-card/youtube-video-card.component';
+import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
 
 
 
@@ -30,11 +30,11 @@ import { YoutubeVideoCardComponent } from './pages/youtube-video-card/youtube-vi
     FooterComponent,
     AppointmentsComponent,
     AboutComponent,
-    ReviewsComponent,
     SpecialtiesComponent,
     ContactComponent,
     SpecialtyDetailDialogComponent,
-    YoutubeVideoCardComponent
+    YoutubeVideoCardComponent,
+    TestimonialsComponent
 
   ],
   imports: [
