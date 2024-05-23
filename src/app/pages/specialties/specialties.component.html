@@ -1,0 +1,15 @@
+<section class="specialties py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Serviços</h2>
+    <div class="row">
+      <div class="col-lg-3 d-flex align-items-stretch" *ngFor="let specialty of specialties">
+        <mat-card class="card mb-4 shadow-sm h-100 position-relative" (click)="openDialog(specialty)">
+          <img mat-card-image [src]="specialty.image" alt="Imagem do serviço">
+          <div class="card-body d-flex flex-column justify-content-start position-absolute w-100 h-100">
+            <p class="card-text text-center display-8" style="background-color: rgba(255, 255, 255, 0.6); color: black;">{{specialty.name}}</p>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>

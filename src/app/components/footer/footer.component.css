@@ -1,0 +1,18 @@
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #6c757d;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.large-icon {
+  font-size: 2.5rem; /* Ajuste o tamanho conforme necessário */
+}
+
+

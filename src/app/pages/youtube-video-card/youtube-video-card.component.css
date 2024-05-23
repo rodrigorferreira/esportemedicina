@@ -1,0 +1,38 @@
+.video-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.video-card {
+  width: 300px; /* Largura do card */
+  margin-bottom: 20px;
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .video-card {
+    width: calc(50% - 20px); /* Ajuste para dois cards por linha em telas menores */
+  }
+}
+
+@media (max-width: 576px) {
+  .video-card {
+    width: calc(100% - 20px); /* Ajuste para um card por linha em telas ainda menores */
+  }
+}
+
+.video-card {
+  width: 300px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.video-card:hover {
+  transform: scale(1.09); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
