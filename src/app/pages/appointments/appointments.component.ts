@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './appointments.component.css'
 })
 export class AppointmentsComponent {
+onSubmit() {
+throw new Error('Method not implemented.');
+}
+appointments: any;
+appointment: any;
+doctors: any;
 
 }
