@@ -1,3 +1,4 @@
+
 body {
   background-color: #f8f9fa;
 }
@@ -22,12 +23,4 @@ body {
 
 .shadow {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-}
-
-/* Ajustes adicionais */
-@media (min-width: 768px) {
-  .input-group-text,
-  .btn-primary {
-    min-width: 120px; /* Para evitar mudanças de tamanho bruscas */
-  }
 }

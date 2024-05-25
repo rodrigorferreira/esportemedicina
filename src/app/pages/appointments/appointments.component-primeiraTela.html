@@ -1,7 +1,7 @@
 <div class="container mt-5">
   <h1 class="text-center mb-4">Agendamento de Pacientes</h1>
 
-  <form (submit)="onSubmit()" class="shadow p-4 rounded bg-light">
+  <form (submit)="onSubmit()" class="shadow-sm p-4 rounded bg-light">
     <div class="mb-3">
       <label for="patientName" class="form-label">Nome do Paciente</label>
       <div class="input-group">
@@ -13,50 +13,57 @@
           id="patientName"
           name="patientName"
           class="form-control"
-          placeholder="Nome do Paciente"
           [(ngModel)]="appointment.patientName"
           required
+          aria-label="Nome do Paciente"
         />
       </div>
     </div>
 
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="appointmentDate" class="form-label">Data do Agendamento</label>
-        <div class="input-group">
-          <span class="input-group-text bg-primary text-white">
-            <i class="fas fa-calendar-alt"></i>
-          </span>
-          <input
-            type="date"
-            id="appointmentDate"
-            name="appointmentDate"
-            class="form-control"
-            placeholder="Data do Agendamento"
-            [(ngModel)]="appointment.date"
-            required
-          />
-        </div>
-      </div>
+    <!-- Adicionei mais espaçamento aqui -->
+    <div class="mb-4"></div>
 
-      <div class="col-md-6">
-        <label for="appointmentTime" class="form-label">Hora do Agendamento</label>
-        <div class="input-group">
-          <span class="input-group-text bg-primary text-white">
-            <i class="fas fa-clock"></i>
-          </span>
-          <input
-            type="time"
-            id="appointmentTime"
-            name="appointmentTime"
-            class="form-control"
-            placeholder="Hora do Agendamento"
-            [(ngModel)]="appointment.time"
-            required
-          />
-        </div>
+    <div class="mb-3">
+      <label for="appointmentDate" class="form-label">Data do Agendamento</label>
+      <div class="input-group">
+        <span class="input-group-text bg-primary text-white">
+          <i class="fas fa-calendar-alt"></i>
+        </span>
+        <input
+          type="date"
+          id="appointmentDate"
+          name="appointmentDate"
+          class="form-control"
+          [(ngModel)]="appointment.date"
+          required
+          aria-label="Data do Agendamento"
+        />
       </div>
     </div>
+
+    <!-- Adicionei mais espaçamento aqui -->
+    <div class="mb-4"></div>
+
+    <div class="mb-3">
+      <label for="appointmentTime" class="form-label">Hora do Agendamento</label>
+      <div class="input-group">
+        <span class="input-group-text bg-primary text-white">
+          <i class="fas fa-clock"></i>
+        </span>
+        <input
+          type="time"
+          id="appointmentTime"
+          name="appointmentTime"
+          class="form-control"
+          [(ngModel)]="appointment.time"
+          required
+          aria-label="Hora do Agendamento"
+        />
+      </div>
+    </div>
+
+    <!-- Adicionei mais espaçamento aqui -->
+    <div class="mb-4"></div>
 
     <div class="mb-3">
       <label for="doctor" class="form-label">Médico</label>
@@ -70,14 +77,17 @@
           class="form-select"
           [(ngModel)]="appointment.doctor"
           required
+          aria-label="Médico"
         >
-          <option disabled selected>Selecione um médico</option>
           <option *ngFor="let doctor of doctors" [value]="doctor">
             {{ doctor }}
           </option>
         </select>
       </div>
     </div>
+
+    <!-- Adicionei mais espaçamento aqui -->
+    <div class="mb-4"></div>
 
     <div class="mb-3">
       <label for="notes" class="form-label">Observações</label>
@@ -89,8 +99,8 @@
           id="notes"
           name="notes"
           class="form-control"
-          placeholder="Observações"
           [(ngModel)]="appointment.notes"
+          aria-label="Observações"
         ></textarea>
       </div>
     </div>
@@ -98,30 +108,33 @@
     <button type="submit" class="btn btn-primary w-100">Agendar</button>
   </form>
 
+  <!-- Adicionei mais espaçamento aqui -->
+  <div class="mb-5"></div>
+
   <div class="mt-5">
-    <h2 class="text-center">Próximos Agendamentos</h2>
-    <ul class="list-group shadow p-3 bg-body rounded">
+    <h2 class="text-center mb-4">Próximos Agendamentos</h2>
+    <ul class="list-group shadow-sm p-3 bg-white rounded">
       <li
         *ngFor="let appointment of appointments"
-        class="list-group-item d-flex justify-content-between align-items-center"
+        class="list-group-item d-flex flex-column flex-md-row justify-content-between align-items-center mb-2"
       >
-        <div>
+        <div class="mb-2 mb-md-0">
           <i class="fas fa-calendar-alt me-2"></i>
           <span>{{ appointment.date | date }}</span>
         </div>
-        <div>
+        <div class="mb-2 mb-md-0">
           <i class="fas fa-clock me-2"></i>
           <span>{{ appointment.time }}</span>
         </div>
-        <div>
+        <div class="mb-2 mb-md-0">
           <i class="fas fa-user me-2"></i>
           <span>{{ appointment.patientName }}</span>
         </div>
-        <div>
+        <div class="mb-2 mb-md-0">
           <i class="fas fa-stethoscope me-2"></i>
           <span>{{ appointment.doctor }}</span>
         </div>
-        <div>
+        <div class="mb-2 mb-md-0">
           <i class="fas fa-notes-medical me-2"></i>
           <span>{{ appointment.notes }}</span>
         </div>
