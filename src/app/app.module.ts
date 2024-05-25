@@ -18,6 +18,7 @@ import { SpecialtyDetailDialogComponent } from './pages/specialties/dialogs/spec
 import { MatDialogModule } from '@angular/material/dialog';
 import { YoutubeVideoCardComponent } from './pages/youtube-video-card/youtube-video-card.component';
 import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 
@@ -34,7 +35,8 @@ import { TestimonialsComponent } from './pages/testimonials/testimonials.compone
     ContactComponent,
     SpecialtyDetailDialogComponent,
     YoutubeVideoCardComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    LoginComponent
 
   ],
   imports: [
