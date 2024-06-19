@@ -1,0 +1,12 @@
+<!-- consultorio.component.html -->
+<div class="container my-5">
+  <div class="row">
+    <!-- Iteração sobre a lista de mídias do consultório -->
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4" *ngFor="let midia of midiasConsultorio">
+      <div class="card">
+        <!-- Exibe a imagem se for uma foto -->
+        <img *ngIf="midia.tipo === 'foto'" [src]="midia.path" class="card-img-top" alt="Foto do consultório">
+      </div>
+    </div>
+  </div>
+</div>

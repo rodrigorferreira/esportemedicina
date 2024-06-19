@@ -1,0 +1,15 @@
+/* consultorio.component.css */
+.card {
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-img-top {
+  height: 200px; /* Ajuste a altura conforme necessário */
+  object-fit: cover; /* Garante que a imagem cubra todo o espaço disponível */
+  width: 100%; /* Garante que a imagem se ajuste à largura do card */
+}

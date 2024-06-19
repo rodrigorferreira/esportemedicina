@@ -1,60 +1,89 @@
-.btn-whatsapp:hover {
-  background-color: #25D366 !important;
-  border-color: #25D366 !important;
+/* Estilos para o vídeo de fundo */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
 }
 
-
-/* home.component.css */
-
-/* Estilos para a seção de boas-vindas */
-section.py-5 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
-.btn-whatsapp {
-  margin-top: 1rem;
-}
-
+/* Estilos adicionais para garantir a legibilidade do conteúdo sobre o vídeo */
 .container {
-  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilos para a seção de Atendimento VIP */
-.bg-light {
-  background-color: #f8f9fa !important;
-  border-radius: 8px;
-  padding: 2rem;
+section {
+  background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para legibilidade */
+  padding: 20px;
+  border-radius: 70px;
+  margin-bottom: 100px;
 }
 
-section.bg-light h2 {
-  color: #343a40;
+.navbar {
+  background-color: rgba(248, 249, 250, 0.8); /* Torna a navbar semi-transparente */
+  z-index: 2; /* Garante que a navbar esteja acima do vídeo */
 }
 
-section.bg-light p {
-  color: #6c757d;
+.navbar-brand {
+  font-size: 1.5em;
+  color: #007bff;
 }
 
-
-/* Ajustes de responsividade */
-@media (max-width: 768px) {
-  .display-4 {
-    font-size: 2.5rem;
-  }
-
-  .display-5 {
-    font-size: 2rem;
-  }
-
-  .lead {
-    font-size: 1.25rem;
-  }
-
-  .btn-lg {
-    font-size: 1rem;
-    padding: 0.75rem 1.25rem;
-  }
+.navbar-nav {
+  width: 100%;
+  justify-content: center;
 }
 
+.navbar-nav .nav-link {
+  color: #007bff;
+  font-size: 1.4em; /* Aumenta o tamanho da fonte */
+  transition: color 0.5s ease-out;
+}
 
+.navbar-nav .nav-link:hover {
+  /* color: #0056b3; */
+  color: #ee9608;
+}
 
+.navbar-toggler {
+  border-color: #007bff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 123, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estilos específicos para a seção de contato */
+.contact .card {
+  background: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para os cartões */
+}
+
+.contact .card-body {
+  color: black; /* Texto preto para contraste no fundo claro dos cartões */
+}
+
+.map-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background:
+}

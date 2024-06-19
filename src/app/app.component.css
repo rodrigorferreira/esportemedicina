@@ -1,0 +1,27 @@
+.content {
+  min-height: calc(100vh - 60px); /* Altura mínima da tela menos a altura da navbar */
+  padding-bottom: 100px; /* Altura do footer */
+  box-sizing: border-box;
+}
+
+/* Estilos do footer */
+app-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Certifique-se de que o footer esteja acima de todos os outros elementos */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+  .content {
+    padding-bottom: 150px; /* Altura do footer */
+  }
+}
+
+/* Estilos para dispositivos maiores, como tablets e computadores */
+@media (min-width: 768px) {
+  .content {
+    padding-bottom: 100px; /* Altura do footer */
+  }
+}

@@ -1,58 +1,28 @@
-/* .contact {
-  background-color: #f8f9fa;
-  padding: 2rem 0;
-}
-
-.contact h2 {
-  margin-bottom: 2rem;
-}
-
-.card-title {
-  margin-bottom: 0.5rem;
-}
-
-.ratio {
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
-}
-
-.text-center a.btn {
-  margin-top: 2rem;
-  margin-bottom: 5rem; /* Adicionando mais espaço na parte inferior */
-/* } */
-
+/* Estilos específicos para a seção de contato */
 .contact {
-  background-color: #f8f9fa;
-  padding: 2rem 0;
+  margin-bottom: 10px; /* Adiciona margem inferior para separar do próximo elemento */
 }
 
-.contact h2 {
-  margin-bottom: 2rem;
+.contact .card {
+  background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para os cartões */
+  color: white; /* Texto branco para contraste */
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+  margin-bottom: 20px; /* Adiciona margem inferior para separar do próximo elemento */
 }
 
-.card-title {
-  margin-bottom: 0.5rem;
-}
-
-.map-container {
+.contact .map-container {
   position: relative;
-  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
   height: 0;
-  padding-bottom: 56.25%; /* 16:9 ratio */
-  border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
+  overflow: hidden;
+  max-width: 100%;
 }
 
-.map-container iframe {
+.contact .map-container iframe {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.text-center a.btn {
-  margin-top: 2rem;
-  margin-bottom: 5rem; /* Adicionando mais espaço na parte inferior */
+  width: 50%;
+  height: 50%;
+  border: 100;
 }

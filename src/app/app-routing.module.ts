@@ -1,3 +1,5 @@
+// app-routing.module.ts
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
@@ -8,6 +10,8 @@ import { SpecialtiesComponent } from './pages/specialties/specialties.component'
 import { ContactComponent } from './pages/contact/contact.component';
 import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
 import { LoginComponent } from './pages/login/login.component';
+import { DrSelenioMediaComponent } from './pages/dr-selenio-media/dr-selenio-media.component';
+import { ConsultorioComponent } from './pages/consultorio/consultorio.component';
 
 
 const routes: Routes = [
@@ -17,7 +21,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent},
   { path: 'appointments', component: AppointmentsComponent},
   { path: 'testimonials', component: TestimonialsComponent},
-  { path: 'login', component: LoginComponent},
+  { path: 'dr-selenio-media', component: DrSelenioMediaComponent},
+  { path: 'consultorio', component: ConsultorioComponent},
 ];
 
 @NgModule({

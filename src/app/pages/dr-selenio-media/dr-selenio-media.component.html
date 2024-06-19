@@ -1,0 +1,30 @@
+<!-- dr-selenio-media.component.html -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Dr. Selênio na mídia</h2>
+  <p class="text-center mb-5">Essa página é para divulgar algumas das entrevistas e publicações já realizadas pelo Dr. Selênio Campos Filho.</p>
+
+  <!-- Iteração sobre a lista de matérias -->
+  <div *ngFor="let materia of materias; let i = index">
+    <!-- Divisão para cada matéria -->
+    <div class="row mb-5">
+      <!-- Coluna para o vídeo ou imagem -->
+      <div class="col-lg-6">
+        <!-- Exibe o vídeo se houver um caminho de vídeo -->
+        <video *ngIf="materia.videoPath" width="100%" controls>
+          <source [src]="materia.videoPath" type="video/mp4">
+          Seu navegador não suporta vídeos.
+        </video>
+        <!-- Exibe a imagem se houver um caminho de imagem -->
+        <img *ngIf="materia.imagePath" [src]="materia.imagePath" alt="Imagem da matéria" class="img-fluid">
+      </div>
+      <!-- Coluna para o texto e link da matéria -->
+      <div class="col-lg-6">
+        <h3>{{ materia.titulo }}</h3>
+        <p>{{ materia.descricao }}</p>
+        <a [href]="materia.link" target="_blank" class="btn btn-primary">Ver Matéria</a>
+      </div>
+    </div>
+    <!-- Linha divisória entre as matérias -->
+    <hr *ngIf="i < materias.length - 1">
+  </div>
+</div>

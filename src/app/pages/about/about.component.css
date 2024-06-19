@@ -1,14 +1,77 @@
-/* p {
-  font-weight: bold;
-  font-size: 20px;
-  color: blue;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-} */
+#about-doctor {
+  background-color: #f9f9f9;
+}
 
-p {
-  font-size: 20px;
+#about-doctor .img-fluid {
+  max-width: 80%;
+  cursor: pointer;
+}
+
+#about-doctor h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+#about-doctor .lead {
+  font-size: 1.25rem;
   color: #333;
   text-align: justify;
   line-height: 1.5;
-  font-family: 'Helvetica', sans-serif
+  font-family: 'Helvetica', sans-serif;
+}
+
+#about-doctor .container {
+  max-width: 1140px;
+}
+
+#about-doctor .row {
+  margin-bottom: 2rem;
+}
+
+#about-doctor .p-4 {
+  padding: 2rem;
+}
+
+.curriculum-list {
+  font-size: 1.1rem;
+  color: #333;
+  text-align: left;
+  line-height: 1.6;
+  font-family: 'Helvetica', sans-serif;
+  padding-left: 1.5rem;
+}
+
+.curriculum-list li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  #about-doctor .col-lg-4, #about-doctor .col-lg-8 {
+    text-align: center;
+  }
+
+  #about-doctor .col-lg-8 {
+    margin-top: 1.5rem;
+  }
+
+  #about-doctor h2 {
+    text-align: center;
+  }
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-title {
+  font-size: 1.75rem;
+  color: #333;
+}
+
+.modal-body p {
+  font-size: 1.1rem;
+  color: #333;
+  text-align: justify;
+  line-height: 1.6;
+  font-family: 'Helvetica', sans-serif;
 }

@@ -19,6 +19,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { YoutubeVideoCardComponent } from './pages/youtube-video-card/youtube-video-card.component';
 import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
 import { LoginComponent } from './pages/login/login.component';
+import { DrSelenioMediaComponent } from './pages/dr-selenio-media/dr-selenio-media.component';
+import { ConsultorioComponent } from './pages/consultorio/consultorio.component';
 
 
 
@@ -36,7 +38,9 @@ import { LoginComponent } from './pages/login/login.component';
     SpecialtyDetailDialogComponent,
     YoutubeVideoCardComponent,
     TestimonialsComponent,
-    LoginComponent
+    LoginComponent,
+    DrSelenioMediaComponent,
+    ConsultorioComponent
 
   ],
   imports: [
