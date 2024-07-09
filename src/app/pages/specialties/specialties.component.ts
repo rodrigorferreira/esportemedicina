@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { SpecialtyDetailDialogComponent } from './dialogs/specialty-detail-dialog/specialty-detail-dialog.component';
+import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
@@ -8,8 +7,6 @@ import { SpecialtyDetailDialogComponent } from './dialogs/specialty-detail-dialo
   templateUrl: './specialties.component.html',
   styleUrl: './specialties.component.css'
 })
-
-
 
 export class SpecialtiesComponent {
 
@@ -42,13 +39,9 @@ export class SpecialtiesComponent {
 
   ];
 
-  constructor(public dialog: MatDialog) { }
+  selectedSpecialty: any;
 
-
-  openDialog(specialty: any): void {
-    this.dialog.open(SpecialtyDetailDialogComponent, {
-      data: specialty
-    });
+  selectSpecialty(specialty: any): void {
+    this.selectedSpecialty = specialty;
   }
-
 }

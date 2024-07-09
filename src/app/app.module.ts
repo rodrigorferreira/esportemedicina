@@ -8,17 +8,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AppointmentsComponent } from './pages/appointments/appointments.component';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './pages/about/about.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { SpecialtiesComponent } from './pages/specialties/specialties.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { SpecialtyDetailDialogComponent } from './pages/specialties/dialogs/specialty-detail-dialog/specialty-detail-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { YoutubeVideoCardComponent } from './pages/youtube-video-card/youtube-video-card.component';
-import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
-import { LoginComponent } from './pages/login/login.component';
 import { DrSelenioMediaComponent } from './pages/dr-selenio-media/dr-selenio-media.component';
 import { ConsultorioComponent } from './pages/consultorio/consultorio.component';
 
@@ -31,14 +27,10 @@ import { ConsultorioComponent } from './pages/consultorio/consultorio.component'
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    AppointmentsComponent,
     AboutComponent,
     SpecialtiesComponent,
     ContactComponent,
-    SpecialtyDetailDialogComponent,
     YoutubeVideoCardComponent,
-    TestimonialsComponent,
-    LoginComponent,
     DrSelenioMediaComponent,
     ConsultorioComponent
 
