@@ -13,4 +13,8 @@ export class NavbarComponent {
     this.isNavbarCollapsed = !this.isNavbarCollapsed;
   }
 
+  openAgenda() {
+    window.open('https://www.doctoralia.com.br/selenio-campos-filho/medico-do-esporte-nutrologo', '_blank');
+  }
+
 }
