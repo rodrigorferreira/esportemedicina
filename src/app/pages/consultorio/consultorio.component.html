@@ -1,11 +1,15 @@
 <!-- consultorio.component.html -->
+
 <div class="container my-5">
-  <div class="row">
-    <!-- Iteração sobre a lista de mídias do consultório -->
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-4" *ngFor="let midia of midiasConsultorio">
-      <div class="card">
-        <!-- Exibe a imagem se for uma foto -->
-        <img *ngIf="midia.tipo === 'foto'" [src]="midia.path" class="card-img-top" alt="Foto do consultório">
+  <div *ngFor="let nomeConsultorio of ['barra', 'niteroi']">
+    <h1 class="text-center">{{ 'Consultório ' + nomeConsultorio.charAt(0).toUpperCase() + nomeConsultorio.slice(1) }}</h1>
+    <div class="row">
+      <!-- Iteração sobre a lista de mídias do consultório -->
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4" *ngFor="let midia of getMidiasPorConsultorio(nomeConsultorio)">
+        <div class="card">
+          <!-- Exibe a imagem se for uma foto -->
+          <img *ngIf="midia.tipo === 'foto'" [src]="midia.path" class="card-img-top" alt="Foto do consultório {{ nomeConsultorio }}">
+        </div>
       </div>
     </div>
   </div>

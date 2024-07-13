@@ -37,6 +37,21 @@ export class SpecialtiesComponent {
       description: 'Iniciamos medicação somente quando necessário e quando há critérios clínicos ou laboratoriais preenchidos, de acordo com as principais diretrizes de instituições mundiais. Mas sempre que necessário, iniciaremos as medicações mais indicadas, que ajudem ao paciente a alcançar o objetivo que lhe motivou a ir na consulta.'
     },
 
+    { name: 'Calorimetria indireta',
+      image: '../../../assets/calorimetria.jpg',
+      description: 'A calorimetria indireta é um exame destinado a avaliação da taxa metabólica basal, ou seja, a quantidade de calorias por dia que o organismo gasta em estado de repouso absoluto. Com esse exame, nós conseguimos dizer com grande precisão se o paciente tem um metabolismo baixo, normal ou alto, que possa interferir no seu planejamento alimentar. Com isso calculamos com maior eficiência o seu gasto calórico diário, e conseguimos prescrever um planejamento alimentar mais eficaz.'
+    },
+
+    { name: 'Bioimpedânicia',
+      image: '../../../assets/bioimpedancia.jpeg',
+      description: 'Método de avaliar composição corporal com grande precisão, utilizando uma maquina que alia a resistência elétrica com outros dados como peso, e altura, para avaliar sua composição corporal, entregando dados como quantidade de massa muscular e massa gorda que o paciente possui.'
+    },
+
+    { name: 'Ergoespirometria',
+      image: '../../../assets/testeesforco.jpg',
+      description: 'Teste para avaliação da saúde cardiovascular e pulmonar, colocando o corpo sobre o estresse do exercício físico, e com isso analisando o comportamento cardiopulmonar durante o mesmo. Conseguimos através desse teste, além de avaliar a saúde do paciente, prescrever atividade física através de zonas de treinamento, e estimar gasto calórico no exercício. Também conseguimos dizer com grande precisão, em que momento de intensidade do exercício o paciente gasta mais caloria em carboidrato ou em gordura.'
+    },
+
   ];
 
   selectedSpecialty: any;

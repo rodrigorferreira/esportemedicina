@@ -21,7 +21,13 @@
   z-index: -1;
 }
 
-video {
+/* video {
   width: 100%;
   height: auto;
+} */
+
+.highlighted-text {
+  font-size: 2em; /* Aumenta o tamanho da fonte */
+  color: #000000; /* Muda a cor do texto para vermelho */
+  /* text-shadow: 2px 2px 4px #000000; Adiciona uma sombra ao texto */
 }
