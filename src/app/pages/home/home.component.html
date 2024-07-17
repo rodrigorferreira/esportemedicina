@@ -1,13 +1,16 @@
 <div class="container-fluid p-0">
 
   <!-- Painel de vídeo -->
-   <div class="row">
-    <div class="col-12 p-0">
-      <video #voleiVideo width="390" height="340" mute loop playsinline preload="auto" class="w-100">
-        <source src="assets/volei.mp4" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo.
-      </video>
+  <div class="border rounded-pill p-10">
+    <!-- Painel de vídeo -->
+    <div class="row">
+      <div class="col-12 p-10">
+        <video id="bg-video" #voleiVideo autoplay muted loop playsinline preload="auto">
+          <source src="assets/volei.mp4" type="video/mp4">
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
       </div>
+    </div>
   </div>
 
 
@@ -15,13 +18,15 @@
   <div class="container text-center mt-5">
 
     <!-- Seção de boas-vindas -->
-    <section class="welcome-section my-5">
-      <h1 class="display-4">Bem-vindo ao Esporte & Medicina</h1>
+    <section class="welcome-section my-5" style="color: white;">
+      <h1 class="display-4 lead my-4">Bem-vindo ao Esporte & Medicina</h1>
       <p class="lead my-4">Cuidado especializado para sua saúde e bem-estar.</p>
       <a href="https://wa.me/+5521973483969" target="_blank" class="btn btn-primary btn-lg">
         <i class="bi bi-whatsapp"></i> Agende sua consulta
       </a>
     </section>
+
+
 
   <!-- Seção de About -->
   <section class="py-5">
