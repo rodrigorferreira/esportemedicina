@@ -11,7 +11,7 @@
 
 #bg-video {
   position: absolute;
-  top: 50%;
+  top: 50%; /* Ajuste a porcentagem conforme necessário para posicionar o vídeo */
   left: 50%;
   min-width: 100%;
   min-height: 100%;
